@@ -1,4 +1,4 @@
-# ConfliBERT-DockerContainerization
+# ConfliBERT-Docker Containerization
 
 Welcome to the how to guide to install a Docker version of ConfliBERT. After completing all the steps below, you will now have a localized version of ConfliBERT without the hassle of building it from scratch. 
 
