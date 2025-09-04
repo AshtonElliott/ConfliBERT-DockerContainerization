@@ -32,3 +32,14 @@ docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_c
 docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_cpu.py --dataset <Add Desired Dataset> --report_per_epoch
 ```
 ---
+
+If you do not have a dataset of your own set up, we have a number or preset datasets. These include:
+- 20news.json
+- BBC_News.json
+- IndiaPoliceEvents_docs.json
+- IndiaPoliceEvents_sents.json
+- insightCrime.json
+- re3d.json
+- satp_relevant.json
+
+  The details of the datasets can be found here: https://github.com/eventdata/ConfliBERT/tree/main/configs
