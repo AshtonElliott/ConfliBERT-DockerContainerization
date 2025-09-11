@@ -42,5 +42,4 @@ If you do not have a dataset of your own set up, we have a number or preset data
 - re3d.json
 - satp_relevant.json
   
-
-  The details of the datasets can be found here: https://github.com/eventdata/ConfliBERT/tree/main/configs
+The details of the datasets can be found here (under "Evaluation Datasets"): https://github.com/eventdata/ConfliBERT/blob/main/README.md
