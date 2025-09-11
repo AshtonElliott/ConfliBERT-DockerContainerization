@@ -15,7 +15,7 @@ docker pull zawad1879/conflibert:latest
 
 ## Create a Docker Container
 
-Creating the Docker Container can be achieved in two ways: via your local PC Terminal or Docker Application. While both methods are viable, we recommend the Terminal method as it allows more options to building your container. To elaborate, the Terminal method allows you to construct an image with one of our preset python scripts. These scripts were made to allow either lower spec or non-CUDA capable PCs to run ConfliBERT. That said, even some of the current scripts still require great processing power, so we will break down which script is ideal to use for each level of a computer you have.
+Creating the Docker Container can be achieved via your local PC's Terminal. Currently, an image can be constructed with one of our preset python scripts. These scripts were made to allow either lower spec or non-CUDA capable PCs to run ConfliBERT. That said, even some of the current scripts still require great processing power, so we will break down which script is ideal to use for each level of a computer you have.
 
 **For the GPU/CUDA Variant:**
 ```bash
