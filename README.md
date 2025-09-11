@@ -45,3 +45,5 @@ If you do not have a dataset of your own set up, we have a number of preset data
 - satp_relevant.json
   
 The details of each dataset can be found here (under "Evaluation Datasets"): https://github.com/eventdata/ConfliBERT/blob/main/README.md
+
+If you wish to alter the config file of a dataset, I recommend to reference the readme file within the "configs" folder of the Main ConfliBERT GitHub Repo: https://github.com/eventdata/ConfliBERT/blob/main/configs/readme.md
