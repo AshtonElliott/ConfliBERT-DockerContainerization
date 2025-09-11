@@ -33,7 +33,7 @@ docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_c
 ```
 ---
 
-If you do not have a dataset of your own set up, we have a number or preset datasets. These include:
+If you do not have a dataset of your own set up, we have a number of preset datasets. These include:
 - 20news.json
 - BBC_News.json
 - IndiaPoliceEvents_docs.json
@@ -42,4 +42,4 @@ If you do not have a dataset of your own set up, we have a number or preset data
 - re3d.json
 - satp_relevant.json
   
-The details of the datasets can be found here (under "Evaluation Datasets"): https://github.com/eventdata/ConfliBERT/blob/main/README.md
+The details of each dataset can be found here (under "Evaluation Datasets"): https://github.com/eventdata/ConfliBERT/blob/main/README.md
