@@ -29,7 +29,7 @@ docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_c
 
 **For the Low/Laptop CPU Variant:**
 ```bash
-docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_cpu.py --dataset <Add Desired Dataset> --report_per_epoch
+docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_cpu_low.py --dataset <Add Desired Dataset> --report_per_epoch
 ```
 ---
 
