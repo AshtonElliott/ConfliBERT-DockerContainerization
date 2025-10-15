@@ -7,10 +7,16 @@ Welcome to the how to guide to install a Docker version of ConfliBERT. After com
 - **(Optional) Sufficient resources**: While we have a laptop version in production, it is more ideal to run a higher CPU or GPU for larger and faster results.
 
 ## Pull The Docker Image
-- To install the image, you must utilize the command terminal of your respective OS. The command itself is the same across platforms as this action orginates from Docker Desktop.
-
+- To install the image, you must utilize the command terminal of your respective OS. The command itself is the same across platforms. Currently, we have two available images.
+- 
+**For CPU-only (Mac/PC without NVIDIA GPU):**
 ```bash
-docker pull zawad1879/conflibert:latest
+docker pull ashtone/conflibertcpu:latest
+```
+
+**For GPU (PC with NVIDIA GPU):**
+```bash
+docker pull ashtone/conflibertgpu:latest
 ```
 
 ## Create a Docker Container
@@ -19,19 +25,21 @@ Creating the Docker Container can be achieved via your local PC's Terminal. Curr
 
 **For the GPU/CUDA Variant:**
 ```bash
-docker run --gpus all --name <Add Name> zawad1879/conflibert:latest python3 finetune_data.py --dataset <Add Desired Dataset> --report_per_epoch
+docker run --gpus all --name <Add Name> <Image Version> python3 finetune_data.py --dataset <Add Desired Dataset>
 ```
 
-**For the High CPU Variant:**
+**For the CPU Variant:**
 ```bash
-docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_cpu.py --dataset <Add Desired Dataset> --report_per_epoch
+docker run --name <Add Name> <Image Version> python3 finetune_data_cpu.py --dataset <Add Desired Dataset>
 ```
 
 **For the Low/Laptop CPU Variant:**
 ```bash
-docker run --name <Add Name> zawad1879/conflibert:latest python3 finetune_data_cpu_low.py --dataset <Add Desired Dataset> --report_per_epoch
+docker run --name <Add Name> <Image Version> python3 finetune_data_cpu_low.py --dataset <Add Desired Dataset>
 ```
 ---
+
+If you wish to see the progress of the finetuning per epoch, you can add "--report_per_epoch" to the end of your command.
 
 ## Datasets
 
