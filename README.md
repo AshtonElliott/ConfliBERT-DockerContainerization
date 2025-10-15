@@ -8,7 +8,7 @@ Welcome to the how to guide to install a Docker version of ConfliBERT. After com
 
 ## Pull The Docker Image
 - To install the image, you must utilize the command terminal of your respective OS. The command itself is the same across platforms. Currently, we have two available images.
-- 
+  
 **For CPU-only (Mac/PC without NVIDIA GPU):**
 ```bash
 docker pull ashtone/conflibertcpu:latest
