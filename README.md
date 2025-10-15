@@ -46,12 +46,13 @@ If you wish to see the progress of the finetuning per epoch, you can add "--repo
 If you do not have a dataset of your own set up, we have a number of preset datasets. These include:
 - 20news.json
 - BBC_News.json
+- BBC_News_Demo.json
 - IndiaPoliceEvents_docs.json
 - IndiaPoliceEvents_sents.json
 - insightCrime.json
 - re3d.json
 - satp_relevant.json
-  
+
 The details of each dataset can be found here (under "Evaluation Datasets"): https://github.com/eventdata/ConfliBERT/blob/main/README.md
 
 If you wish to alter the config file of a dataset, I recommend to reference the readme file within the "configs" folder of the Main ConfliBERT GitHub Repo: https://github.com/eventdata/ConfliBERT/blob/main/configs/readme.md
