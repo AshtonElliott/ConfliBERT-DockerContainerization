@@ -41,17 +41,6 @@ docker run --name <Add Name> <Image Version> python3 finetune_data_cpu_low.py --
 
 If you wish to see the progress of the finetuning per epoch, you can add "--report_per_epoch" to the end of your command.
 
-## View Results
-
-To view the results of the finetuning, you must navigate to the following directory:
-```bash
-\\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\volumes\outputs\_data
-```
-After a dataset is finetuned, a folder of its results can be found here. This folder contains:
-- The Best Results
-- Results per Epoch (if --report_per_epoch was added)
-- Training Progress Scores
-
 ## Datasets
 
 If you do not have a dataset of your own set up, we have a number of preset datasets. These include:
