@@ -47,7 +47,7 @@ To view the results of the finetuning, you must navigate to the following direct
 ```bash
 \\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\volumes\outputs\_data
 ```
-After a dataset is finetuned, a folder of its results can be found here. This folder contains the results of:
+After a dataset is finetuned, a folder of its results can be found here. This folder contains:
 - The Best Results
 - Results per Epoch (if --report_per_epoch was added)
 - Training Progress Scores
