@@ -41,7 +41,7 @@ docker run --name confliBertLaptop ashtone/conflibertcpu:latest python3 finetune
 
 If you wish to see the progress of the finetuning per epoch, you can add "--report_per_epoch" to the end of your command.
 ```bash
-docker run --gpus all --name confliBertGPU ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo --report_per_epoch
+docker run --gpus all --name confliBertGPU ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News --report_per_epoch
 ```
 
 ## Datasets
