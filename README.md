@@ -25,17 +25,17 @@ Creating the Docker Container can be achieved via your local PC's Terminal. Curr
 
 **For the GPU/CUDA Variant:**
 ```bash
-docker run --gpus all --name <Add Name> <Image Version> python3 finetune_data.py --dataset <Add Desired Dataset>
+docker run --gpus all --name confliBertGPU ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo
 ```
 
 **For the CPU Variant:**
 ```bash
-docker run --name <Add Name> <Image Version> python3 finetune_data_cpu.py --dataset <Add Desired Dataset>
+docker run --name confliBertCPU ashtone/conflibertcpu:latest python3 finetune_data_cpu.py --dataset BBC_News_Demo
 ```
 
 **For the Low/Laptop CPU Variant:**
 ```bash
-docker run --name <Add Name> <Image Version> python3 finetune_data_cpu_low.py --dataset <Add Desired Dataset>
+docker run --name confliBertLaptop ashtone/conflibertcpu:latest python3 finetune_data_cpu_low.py --dataset BBC_News_Demo
 ```
 ---
 
@@ -44,14 +44,14 @@ If you wish to see the progress of the finetuning per epoch, you can add "--repo
 ## Datasets
 
 If you do not have a dataset of your own set up, we have a number of preset datasets. These include:
-- 20news.json
-- BBC_News.json
-- BBC_News_Demo.json
-- IndiaPoliceEvents_docs.json
-- IndiaPoliceEvents_sents.json
-- insightCrime.json
-- re3d.json
-- satp_relevant.json
+- 20news
+- BBC_News
+- BBC_News_Demo
+- IndiaPoliceEvents_docs
+- IndiaPoliceEvents_sents
+- insightCrime
+- re3d
+- satp_relevant
 
 The details of each dataset can be found here (under "Evaluation Datasets"): https://github.com/eventdata/ConfliBERT/blob/main/README.md
 
