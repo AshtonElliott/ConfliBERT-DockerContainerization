@@ -14,7 +14,7 @@ Welcome to the how to guide to install a Docker version of ConfliBERT. After com
 docker pull ashtone/conflibertcpu:latest
 ```
 
-**For GPU (PC with NVIDIA GPU):**
+**For GPU (Mac/PC with NVIDIA GPU):**
 ```bash
 docker pull ashtone/conflibertgpu:latest
 ```
