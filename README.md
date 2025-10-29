@@ -38,6 +38,7 @@ docker run --name confliBertCPU -v "%cd%/../outputs:/app/outputs" ashtone/confli
 docker run --name confliBertLaptop -v "%cd%/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu_low.py --dataset BBC_News_Demo
 ```
 
+
 **For the GPU/CUDA Variant & Output via MacOS/Linux/Windows Powershell:**
 ```bash
 docker run --gpus all --name confliBertGPU -v "$(pwd)/../outputs:/app/outputs" ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo
