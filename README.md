@@ -1,3 +1,4 @@
+**IMPORTANT NOTE: THIS WILL ONLY WORK ON WINDOWS**
 # ConfliBERT-Docker Containerization
 
 Welcome to the how to guide to install a Docker version of ConfliBERT. After completing all the steps below, you will now have a localized version of ConfliBERT without the hassle of building it from scratch. 
@@ -23,39 +24,22 @@ docker pull ashtone/conflibertgpu:latest
 
 Note: In order to see the results, you must run Docker Desktop as adminstrator.
 
-**For the GPU/CUDA Variant & Output via Windows Command Line:**
+**For the GPU/CUDA Variant:**
 ```bash
 docker run --gpus all --name confliBertGPU -v "%cd%/../outputs:/app/outputs" ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo
 ```
 
-**For the CPU Variant & Output via Windows Command Line:**
+**For the CPU Variant:**
 ```bash
 docker run --name confliBertCPU -v "%cd%/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu.py --dataset BBC_News_Demo
 ```
 
-**For the Low/Laptop CPU Variant & Output via Windows Command Line:**
+**For the Low/Laptop CPU Variant:**
 ```bash
 docker run --name confliBertLaptop -v "%cd%/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu_low.py --dataset BBC_News_Demo
 ```
 
-
-**For the GPU/CUDA Variant & Output via MacOS/Linux/Windows Powershell:**
-```bash
-docker run --gpus all --name confliBertGPU -v "$(pwd)/../outputs:/app/outputs" ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo
-```
-
-**For the CPU Variant & Output via MacOS/Linux/Windows Powershell:**
-```bash
-docker run --name confliBertCPU -v "$(pwd)/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu.py --dataset BBC_News_Demo
-```
-
-**For the Low/Laptop CPU Variant & Output via MacOS/Linux/Windows Powershell:**
-```bash
-docker run --name confliBertLaptop -v "$(pwd)/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu_low.py --dataset BBC_News_Demo
-```
-
-After running the container, you should find the results in one of two places:
-  - For Windows, it can be found in C:\Users\outputs.
+After running the container, you should find the results in C:\Users\outputs.
 ---
 
 If you wish to see the progress of the finetuning per epoch, you can add "--report_per_epoch" to the end of your command.
