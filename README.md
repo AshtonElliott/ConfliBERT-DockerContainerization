@@ -28,7 +28,7 @@ Note: In order to see the results, you must run Docker Desktop as adminstrator.
 docker run --gpus all --name confliBertGPU -v "%cd%/../outputs:/app/outputs" ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo
 ```
 
-**For the CPU Varian & Output via Windows Command Line:**
+**For the CPU Variant & Output via Windows Command Line:**
 ```bash
 docker run --name confliBertCPU -v "%cd%/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu.py --dataset BBC_News_Demo
 ```
@@ -44,7 +44,7 @@ docker run --name confliBertLaptop -v "%cd%/../outputs:/app/outputs" ashtone/con
 docker run --gpus all --name confliBertGPU -v "$(pwd)/../outputs:/app/outputs" ashtone/conflibertgpu:latest python3 finetune_data.py --dataset BBC_News_Demo
 ```
 
-**For the CPU Varian & Output via MacOS/Linux/Windows Powershell:**
+**For the CPU Variant & Output via MacOS/Linux/Windows Powershell:**
 ```bash
 docker run --name confliBertCPU -v "$(pwd)/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu.py --dataset BBC_News_Demo
 ```
