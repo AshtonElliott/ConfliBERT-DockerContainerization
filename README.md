@@ -21,7 +21,7 @@ docker pull ashtone/conflibertgpu:latest
 
 ## Create a Docker Container
 
-Note: In order to see the results, **you must run Docker Desktop as adminstrator**.
+Note: In order to see the results, you must run Docker Desktop as adminstrator.
 
 **For the GPU/CUDA Variant & Output via Windows Command Line:**
 ```bash
