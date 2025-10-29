@@ -23,7 +23,7 @@ docker pull ashtone/conflibertgpu:latest
 
 Creating the Docker Container can be achieved via your local PC's Terminal. Currently, an image can be constructed with one of our preset python scripts. These scripts were made to allow either lower spec or non-CUDA capable PCs to run ConfliBERT. That said, even some of the current scripts still require great processing power, so we will break down which script is ideal for each level of a computer you have.
 
-In order to see the results, you must run Docker Desktop in adminstrator mode.
+In order to see the results, **you must run Docker Desktop as adminstrator**.
 
 **For the GPU/CUDA Variant & Output via Windows Command Line:**
 ```bash
@@ -56,7 +56,7 @@ docker run --name confliBertLaptop -v "$(pwd)/../outputs:/app/outputs" ashtone/c
 ```
 
 After running the container, you should find the results in one of two places:
-  - For Windows, it can be found at C:\Users\outputs.
+  - For Windows, it can be found in C:\Users\outputs.
 ---
 
 If you wish to see the progress of the finetuning per epoch, you can add "--report_per_epoch" to the end of your command.
