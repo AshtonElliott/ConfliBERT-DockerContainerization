@@ -38,7 +38,6 @@ docker run --name confliBertCPU -v "%cd%/../outputs:/app/outputs" ashtone/confli
 ```bash
 docker run --name confliBertLaptop -v "%cd%/../outputs:/app/outputs" ashtone/conflibertcpu:latest python3 finetune_data_cpu_low.py --dataset BBC_News_Demo
 ```
-
 After running the container, you should find the results in C:\Users\outputs.
 ---
 
